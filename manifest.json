@@ -5,8 +5,6 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#25D366",
-
-{
   "name": "Gotiphers Green Grow Farm",
   "short_name": "Gotiphers Farm",
   "start_url": "/",
@@ -14,3 +12,5 @@
   "background_color": "#ffffff",
   "theme_color": "#25D366"
 }
+
+
