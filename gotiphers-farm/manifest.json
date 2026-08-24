@@ -1,1 +1,13 @@
-
+{
+  "name": "Gotiphers Green Grow Farm",
+  "short_name": "Gotiphers Farm",
+  "description": "Fresh produce and daily farm activities in Lilongwe, Malawi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#25D366",
+  "icons": [
+    {"src": "logo.jpg", "sizes": "192x192", "type": "image/jpeg"},
+    {"src": "logo.jpg", "sizes": "512x512", "type": "image/jpeg"}
+  ]
+}
