@@ -6,12 +6,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gotiphers Green Grow Farm | Fresh Produce Lilongwe</title>
+<meta name="description" content="Gotiphers Green Grow Farm supplies fresh maize, beans, tomatoes, cabbage and veggies in Lilongwe, Malawi. See daily farm activities and order on WhatsApp.">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #fff; }
 header { background: #2e7d32; color: #fff; padding: 20px 10px; text-align: center; }
 header img { width: 80px; height: 80px; border-radius: 50%; margin-bottom: 10px; }
-nav { background: #388e3c; padding: 10px; text-align: center; }
+nav { background: #388e3c; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 10; }
 nav a { color: #fff; text-decoration: none; margin: 0 10px; font-weight: bold; }
 .container { max-width: 1100px; margin: 20px auto; padding: 0 15px; }
 .hero { text-align: center; padding: 30px 0; }
@@ -22,18 +23,20 @@ nav a { color: #fff; text-decoration: none; margin: 0 10px; font-weight: bold; }
 .card img { width: 100%; height: 180px; object-fit: cover; }
 .card h3 { padding: 10px; color: #2e7d32; }
 .card p { padding: 0 10px 10px; font-size: 14px; color: #555; }
-.about, .contact { background: #f1f8e9; padding: 30px; border-radius: 10px; margin: 30px 0; }
-.about img { width: 100%; border-radius: 10px; margin-top: 15px; }
+.about, .contact, .diary { background: #f1f8e9; padding: 30px; border-radius: 10px; margin: 30px 0; }
+.about img, .diary img { width: 100%; border-radius: 10px; margin-top: 15px; }
 audio { width: 100%; margin-top: 15px; }
 footer { background: #2e7d32; color: #fff; text-align: center; padding: 15px; margin-top: 30px; }
 .contact a { color: #2e7d32; font-weight: bold; text-decoration: none; }
 .whatsapp-btn { background:#25D366; color:white; padding:16px 28px; border-radius:10px; text-decoration:none; font-size:18px; font-weight:bold; display:inline-block; }
+.diary-entry { text-align:left; padding:20px; margin-bottom:15px; }
+.diary-date { color:#2e7d32; font-weight:bold; font-size:14px; }
 </style>
 </head>
 <body>
 
 <header>
-<img src="logo.jpg" alt="Gotiphers Green Grow Farm Logo">
+<img src="logo.jpg" alt="Gotiphers Green Grow Farm Logo" loading="lazy">
 <h1>Gotiphers Green Grow Farm</h1>
 <p>Fresh, Natural Agricultural Produce in Lilongwe, Malawi</p>
 </header>
@@ -42,6 +45,7 @@ footer { background: #2e7d32; color: #fff; text-align: center; padding: 15px; ma
 <a href="#home">Home</a>
 <a href="#grains">Grains</a>
 <a href="#veggies">Veggies</a>
+<a href="#diary">Farm Diary</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -50,32 +54,40 @@ footer { background: #2e7d32; color: #fff; text-align: center; padding: 15px; ma
 <section id="home" class="hero">
 <h2>Welcome to Our Farm</h2>
 <p>We grow and supply quality maize, beans, tomatoes, and fresh veggies straight from our fields to your table.</p>
-<img src="farm-rows.jpg" alt="Farm rows" style="width:100%; border-radius:10px; margin-top:15px;">
+<img src="farm-rows.jpg" alt="Farm rows" style="width:100%; border-radius:10px; margin-top:15px;" loading="lazy">
 </section>
 
 <section id="grains">
 <h2 class="section-title">Grains & Legumes</h2>
 <div class="products">
-<div class="card"><img src="maize.jpg" alt="Maize"><h3>Maize</h3><p>Fresh white maize. Bulk orders available.</p></div>
-<div class="card"><img src="beans.jpg" alt="Beans"><h3>Beans</h3><p>High quality beans. Grown naturally.</p></div>
-<div class="card"><img src="groundnuts.jpg" alt="Groundnuts"><h3>Groundnuts</h3><p>Raw and roasted groundnuts.</p></div>
+<div class="card"><img src="maize.jpg" alt="Maize" loading="lazy"><h3>Maize</h3><p>Fresh white maize. Bulk orders available.</p></div>
+<div class="card"><img src="beans.jpg" alt="Beans" loading="lazy"><h3>Beans</h3><p>High quality beans. Grown naturally.</p></div>
+<div class="card"><img src="groundnuts.jpg" alt="Groundnuts" loading="lazy"><h3>Groundnuts</h3><p>Raw and roasted groundnuts.</p></div>
 </div>
 </section>
 
 <section id="veggies">
 <h2 class="section-title">Fresh Veggies</h2>
 <div class="products">
-<div class="card"><img src="tomatoes.jpg" alt="Tomatoes"><h3>Tomatoes</h3><p>Fresh and juicy. Perfect for relish.</p></div>
-<div class="card"><img src="greenpeas.jpg" alt="Green Peas"><h3>Green Peas</h3><p>Sweet green peas. New harvest!</p></div>
-<div class="card"><img src="cabbage.jpg" alt="Cabbage"><h3>Cabbage</h3><p>Big green cabbage heads.</p></div>
-<div class="card"><img src="onions.jpg" alt="Onions"><h3>Onions</h3><p>Red and white onions available.</p></div>
+<div class="card"><img src="tomatoes.jpg" alt="Tomatoes" loading="lazy"><h3>Tomatoes</h3><p>Fresh and juicy. Perfect for relish.</p></div>
+<div class="card"><img src="greenpeas.jpg" alt="Green Peas" loading="lazy"><h3>Green Peas</h3><p>Sweet green peas. New harvest!</p></div>
+<div class="card"><img src="cabbage.jpg" alt="Cabbage" loading="lazy"><h3>Cabbage</h3><p>Big green cabbage heads.</p></div>
+<div class="card"><img src="onions.jpg" alt="Onions" loading="lazy"><h3>Onions</h3><p>Red and white onions available.</p></div>
 </div>
+</section>
+
+<section id="diary" class="diary">
+<h2 class="section-title">Daily Farm Activities 🌾</h2>
+<div id="diary-list"></div>
+<p style="text-align:center; margin-top:20px;">
+<a href="https://wa.me/265994885752?text=Hi Gotiphers Green Grow Farm, I saw your daily farm update" class="whatsapp-btn" style="padding:12px 20px; font-size:16px">💬 Ask About Today's Work</a>
+</p>
 </section>
 
 <section id="about" class="about">
 <h2>About Us</h2>
 <p>Gotiphers Green Grow Farm is a family-run farm dedicated to sustainable agriculture. We believe in feeding Malawi with fresh, chemical-light produce grown with care.</p>
-<img src="family.jpg" alt="Farm Family">
+<img src="family.jpg" alt="Farm Family" loading="lazy">
 <audio controls><source src="audio.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
 </section>
 
@@ -97,6 +109,40 @@ footer { background: #2e7d32; color: #fff; text-align: center; padding: 15px; ma
 <footer>
 <p>&copy; 2026 Gotiphers Green Grow Farm. All Rights Reserved.</p>
 </footer>
+
+<script>
+// ADD NEW DAILY ENTRIES HERE. Newest goes on top
+const activities = [
+  {
+    date: "Monday, 24 Aug 2026",
+    title: "Harvesting Green Peas",
+    text: "New harvest of sweet green peas today! We also watered the tomato seedlings and applied organic compost. Beans are looking strong this week.",
+    img: "diary-24aug.jpg"
+  },
+  {
+    date: "Sunday, 23 Aug 2026", 
+    title: "Weeding & Soil Preparation",
+    text: "Spent the day weeding the maize field. Preparing 2 new ridges for cabbage planting next week. Weather was sunny and perfect.",
+    img: "diary-23aug.jpg"
+  }
+];
+
+const list = document.getElementById('diary-list');
+activities.forEach(item => {
+  list.innerHTML += `
+  <div class="card diary-entry">
+    <p class="diary-date">📅 ${item.date}</p>
+    <h3 style="color:#333; margin:8px 0;">${item.title}</h3>
+    <p>${item.text}</p>
+    ${item.img ? `<img src="${item.img}" alt="${item.title}" loading="lazy">` : ''}
+  </div>`;
+});
+</script>
+
+<script>
+// PWA Service Worker
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
+</script>
 
 </body>
 </html>
